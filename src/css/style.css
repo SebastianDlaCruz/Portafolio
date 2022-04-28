@@ -1,29 +1,4 @@
 @import "./variables.css";
 @import "./reseteo.css";
+@import "./index.css";
 @import "./media.css";
-
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  font-family: var(--parrafos);
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-
-.header {
-  inline-size: 100%;
-  block-size: 50vh;
-}
-
-.header-figure {
-  display: flex;
-  justify-content: space-between;
-  margin: 1.5em calc(1em + 2vw);
-  font-size: var(--step-2);
-
-  & figcaption {
-    text-align: right;
-  }
-}

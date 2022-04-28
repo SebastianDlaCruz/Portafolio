@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+
   <title>Sebastian De La Cruz</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
@@ -30,11 +31,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
-  <!-- font-family: 'Source Code Pro', monospace; -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!-- font-family: 'Space Mono', monospace; -->
+
+  <link rel="stylesheet" href="../src/css/botones/button-hover-effects-with-box-shadow/botones.css">
 </head>
 
 <body>
@@ -42,38 +44,43 @@
   <header class="header">
     <figure class="header-figure">
       <img src="assets/icons/logo.svg" alt="logo" class="header-figure__img">
-      <figcaption class="header-figure__p">Sin pasion no existen las buenas ideas</figcaption>
+      <figcaption class="header-figure__figcaption">Sin pasion no existen las buenas ideas</figcaption>
     </figure>
 
-    <div class="header-contenedor">
 
-      <h1 class="header-contendor__h1">Sebastian De La Cruz</h1>
-      <p class="header-contendor__p">Frontend developer</p>
+    <div class="header-contenedor">
+      <div>
+        <h1 class="header-contendor__h1">SEBASTIAN DE LA CRUZ</h1>
+        <p class="header-contendor__p">Frontend Developer</p>
+      </div>
       <div class="circulo"></div>
     </div>
   </header>
 
   <main>
 
-    <section>
+    <section class="section">
 
       <header>
         <h2>Sobre Mi</h2>
         <img src="assets/icons/bxs_home.svg" alt="home">
       </header>
 
-      <div>
-
-        <div>
-          <p>Buenas 😎. 🤔¿Estas buscando un Desarrollador Frontend que este al tanto de la nuevas tecnologias,
+      <div class="contenedor-sobre-mi">
+        <div class="sobre-mi">
+          <p class="sobre-mi__p">Buenas 😎. 🤔¿Estas buscando un Desarrollador Frontend que este al tanto de la nuevas
+            tecnologias,
             con ganas de aprender y que ame su trabajo?🤔.
             Entonces esta en el lugar indicado .😉 Mi nombre es Sebastian de la Cruz dev frontend
           </p>
         </div>
 
-        <picture>
+        <picture class="picture">
           <source media="(min-width: 950px)" srcset="assets/img/computadoradestop.png">
           <img src="assets/img/computadora.png" alt="computadora">
+          <div class="contendor-enlace">
+            <a href="#" class="contendor-enlace__a">Descargar CV</a>
+          </div>
         </picture>
       </div>
 
@@ -96,7 +103,7 @@
       </footer>
     </section>
 
-    <section>
+    <section classs="section">
       <header>
         <h2>Hablilidades</h2>
         <img src="assets/icons/cib_skills.svg" alt="skill">
@@ -152,7 +159,7 @@
 
     </section>
 
-    <section>
+    <section class="section">
       <header>
         <h2>Proyectos</h2>
         <img src="assets/icons/skill.svg" alt="Proyectos">
@@ -168,7 +175,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="section">
       <header>
         <h2>Contactame</h2>
         <img src="assets/icons/contactame.svg" alt="contactame">
@@ -216,6 +223,7 @@
   </aside>
 
   <button class="nav-boton">boton</button>
+
 
   <script type="module" src="./js/main.js"></script>
 

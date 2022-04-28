@@ -1,0 +1,28 @@
+/* stylelint-disable selector-class-pattern */
+@media screen and (min-width: 65em) {
+  .header-contenedor {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .circulo {
+    margin-top: 2em;
+  }
+
+  .section {
+    & header {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .contenedor-sobre-mi {
+    justify-content: space-between;
+  }
+
+  .sobre-mi {
+    & .sobre-mi__p {
+      text-align: left;
+    }
+  }
+}
