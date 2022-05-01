@@ -1,28 +1,32 @@
 /* stylelint-disable selector-class-pattern */
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 70em) {
   .header-contenedor {
     justify-content: space-between;
     text-align: left;
-  }
 
-  .circulo {
-    margin-top: 2em;
+    .circulo {
+      margin-top: 2em;
+    }
   }
 
   .section {
-    & header {
+    .section-header {
       display: flex;
       justify-content: flex-start;
     }
   }
 
   .contenedor-sobre-mi {
-    justify-content: space-between;
+    justify-content: space-around;
+
+    .sobre-mi {
+      &__p {
+        text-align: left;
+      }
+    }
   }
 
-  .sobre-mi {
-    & .sobre-mi__p {
-      text-align: left;
-    }
+  .picture {
+    max-inline-size: 48%;
   }
 }

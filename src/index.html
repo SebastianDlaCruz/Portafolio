@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" sizes="120x120" href="assets/ico/apple-icon-120x120.png">
   <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="assets/ico/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/ic/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/ico/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/ico/favicon-96x96.png">
@@ -36,7 +36,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../src/css/botones/button-hover-effects-with-box-shadow/botones.css">
 </head>
 
 <body>
@@ -46,12 +45,10 @@
       <img src="assets/icons/logo.svg" alt="logo" class="header-figure__img">
       <figcaption class="header-figure__figcaption">Sin pasion no existen las buenas ideas</figcaption>
     </figure>
-
-
     <div class="header-contenedor">
       <div>
-        <h1 class="header-contendor__h1">SEBASTIAN DE LA CRUZ</h1>
-        <p class="header-contendor__p">Frontend Developer</p>
+        <h1 class="header-contenedor__h1">SEBASTIAN DE LA CRUZ</h1>
+        <p class="header-contenedor__p">Frontend Developer</p>
       </div>
       <div class="circulo"></div>
     </div>
@@ -61,30 +58,43 @@
 
     <section class="section">
 
-      <header>
-        <h2>Sobre Mi</h2>
-        <img src="assets/icons/bxs_home.svg" alt="home">
+      <header class="section-header">
+        <h2 class="section-header__h2">Sobre Mi</h2>
+        <img src="assets/icons/bxs_home.svg" alt="home" class="section-header__img">
       </header>
 
-      <div class="contenedor-sobre-mi">
-        <div class="sobre-mi">
-          <p class="sobre-mi__p">Buenas 😎. 🤔¿Estas buscando un Desarrollador Frontend que este al tanto de la nuevas
-            tecnologias,
-            con ganas de aprender y que ame su trabajo?🤔.
-            Entonces esta en el lugar indicado .😉 Mi nombre es Sebastian de la Cruz dev frontend
-          </p>
-        </div>
-
+      <div class="cuerpo">
         <picture class="picture">
-          <source media="(min-width: 950px)" srcset="assets/img/computadoradestop.png">
-          <img src="assets/img/computadora.png" alt="computadora">
-          <div class="contendor-enlace">
-            <a href="#" class="contendor-enlace__a">Descargar CV</a>
-          </div>
+          <source media="(min-width:  70em)" srcset="assets/img/compurtadoradesk.jpg">
+          <img src="assets/img/compuradoramov.jpg" alt="computadora" class="picture__img" loading="lazy">
         </picture>
+        <div class="contenedor-sobre-mi">
+          <div class="sobre-mi">
+            <p class="sobre-mi__p">Buenas 😎. 🤔¿Estas buscando un Desarrollador Frontend que este al tanto de la nuevas
+              tecnologias,
+              con ganas de aprender y que ame su trabajo?🤔.
+              Entonces esta en el lugar indicado .😉 Mi nombre es Sebastian de la Cruz dev frontend
+            </p>
+            <span class="bordes top"></span>
+            <span class="bordes left"></span>
+            <span class="bordes right"></span>
+            <span class="bordes bottom"></span>
+          </div>
+          <div class="contendor-enlace">
+            <a href="" class="enlace">
+              <span class="enlace__top"></span>
+              <span class="enlace__left "></span>
+              <span class="enlace__right"></span>
+              <span class="enlace__bottom"></span>
+              Descargar CV
+            </a>
+          </div>
+        </div>
       </div>
 
-      <footer>
+      <footer class="section-footer">
+
+        <div class="section-footer__linea"></div>
         <div>
           <p>2020</p>
         </div>
