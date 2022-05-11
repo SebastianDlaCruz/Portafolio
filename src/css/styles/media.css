@@ -1,0 +1,30 @@
+@media screen and (min-width: 78em) {
+  .header-contenedor {
+    justify-content: space-between;
+
+    .hgrup {
+      margin-left: 2rem;
+      text-align: left;
+    }
+
+    &-img {
+      margin-right: 2rem;
+    }
+  }
+
+  .section-header {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+
+  .cuerpo {
+    .contenedor-sobre-mi {
+      justify-content: space-between;
+      padding-left: 2rem;
+    }
+
+    .contendor-enlace {
+      padding-right: 2rem;
+    }
+  }
+}

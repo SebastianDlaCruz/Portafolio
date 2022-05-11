@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"> -->
   <title>Sebastian De La Cruz</title>
-
   <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/ico/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-icon-72x72.png">
@@ -18,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="120x120" href="assets/ico/apple-icon-120x120.png">
   <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="assets/ico/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/ic/apple-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/ico/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/ico/favicon-96x96.png">
@@ -26,47 +23,41 @@
   <link rel="manifest" href="assets/ico/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
+  <meta name="theme-color" content="#000000">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
   <header class="header">
     <figure class="header-figure">
       <img src="assets/icons/logo.svg" alt="logo" class="header-figure__img">
       <figcaption class="header-figure__figcaption">Sin pasion no existen las buenas ideas</figcaption>
     </figure>
     <div class="header-contenedor">
-      <div>
-        <h1 class="header-contenedor__h1">SEBASTIAN DE LA CRUZ</h1>
-        <p class="header-contenedor__p">Frontend Developer</p>
+      <hgrupo class="hgrup">
+        <h1 class="hgrup__h1">SEBASTIAN DE LA CRUZ</h1>
+        <h3 class="hgrup__h3">Frontend Developer</h3>
+      </hgrupo>
+      <div class="header-contenedor-img">
+        <div class="header-contenedor-img__img"></div>
       </div>
-      <div class="circulo"></div>
     </div>
   </header>
-
   <main>
-
     <section class="section">
-
       <header class="section-header">
         <h2 class="section-header__h2">Sobre Mi</h2>
         <img src="assets/icons/bxs_home.svg" alt="home" class="section-header__img">
       </header>
-
       <div class="cuerpo">
         <picture class="picture">
-          <source media="(min-width:  70em)" srcset="assets/img/compurtadoradesk.jpg">
-          <img src="assets/img/compuradoramov.jpg" alt="computadora" class="picture__img" loading="lazy">
+          <source media="(min-width:70em)" srcset="assets/img/computadoradesktop.jpg">
+          <img src="assets/img/coputadoramovil.jpg" alt="computadora" class="picture__img" loading="lazy">
         </picture>
         <div class="contenedor-sobre-mi">
           <div class="sobre-mi">
@@ -91,149 +82,165 @@
           </div>
         </div>
       </div>
-
-      <footer class="section-footer">
-
-        <div class="section-footer__linea"></div>
-        <div>
-          <p>2020</p>
-        </div>
-        <div>
-          <p>2021</p>
-        </div>
-        <div>
-          <p>2022</p>
-        </div>
-        <button>2020</button>
-        <button>2021</button>
-        <button>2022</button>
-        <div>
-          <div>color</div>
-        </div>
-      </footer>
     </section>
 
+    <section class="section section-exp">
+
+      <div class="anio-2020">
+        <p>En este año ingrese a la carrera de de tecnico universitario en programacion,
+          en la Universidad Tecnologica Nacional. Aprendi la logica de la programcion con diagramas de flujo y fue mi
+          primer hacercamiento a un leguaje de programacion
+          como c++ con programacion estruturada.
+          Como proyecto final de la facultadad del primer cuatrimeste hice un juego de datos en consola en c++.
+          Tambien en este año fui insertandome en el mundo del desarrollo web aprendiendo hmtl. </p>
+      </div>
+      <div class="anio-2021">
+        <p>En este año aprendi programacino orientado a objetos con c++ , tambien css y diseño web con figma .
+          Empeze a implementar otro lenguaje de programacion , en este caso javascript ,aprendiendo eventos y
+          peticiones asincronas . Tambien me fui a cercando mas al mundo del frontend
+        </p>
+      </div>
+      <div class="anio-2022">
+        <p>Actualmente estoy estudienado reactjs , junto con styled-components.
+          Aprendi a implementar postcss a mis proyectos junto con vite js un empaquetador. Puliendo mas mis
+          habilidades de programacion. </p>
+      </div>
+      <article class="cotenedor-experiecia-tiempo">
+        <span class="cotenedor-experiecia-tiempo__linea"></span>
+        <button class="cotenedor-experiecia-tiempo__btn uno">2020</button>
+        <button class="cotenedor-experiecia-tiempo__btn dos">2021</button>
+        <button class="cotenedor-experiecia-tiempo__btn tres">2022</button>
+      </article>
+    </section>
     <section classs="section">
-      <header>
-        <h2>Hablilidades</h2>
+      <header class="section-header">
+        <h2 class="section-header__h2">Hablilidades</h2>
         <img src="assets/icons/cib_skills.svg" alt="skill">
       </header>
+      <div class="flex">
+        <div class="contenedor-habilidades">
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/logos_vitejs.svg" alt="Vite" class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">Vite js</h3>
+          </article>
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/logos_react.svg" alt="React" class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">React js</h3>
+          </article>
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/logos_figma.svg" alt="Figma" class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">Figma</h3>
+          </article>
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/vscode-icons_file-type-css.svg" alt="Css" class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">Css</h3>
+          </article>
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/vscode-icons_file-type-postcss.svg" alt="Postcss" class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">Postcss</h3>
+          </article>
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/vscode-icons_file-type-js-official.svg" alt="Javascript"
+              class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">Javascript</h3>
+          </article>
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/simple-icons_styledcomponents.svg" alt="Styled-Componentes"
+              class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">Styled-Componentes</h3>
+          </article>
+          <article class="contenedor-habilidad">
+            <img src="assets/icons/vscode-icons_file-type-html.svg" alt="Html" class="contenedor-habilidad__img">
+            <h3 class="contenedor-habilidad__h3">Html</h3>
+          </article>
+        </div>
+        <div class="contenedor-cirlulo">
+          <div class="pre-contenedor-circulo">
+            <ul class="circulo-habilidades">
+              <!--             <li class="circulo-contenedor"><img src="assets/icons/logos_vitejs.svg" alt="Vite"
+                  class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor"><img src="assets/icons/logos_react.svg" alt="React"
+                  class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor"><img src="assets/icons/logos_figma.svg" alt="Figma"
+                  class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-css.svg" alt="Css"
+                  class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-postcss.svg" alt="Postcss"
+                  class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-js-official.svg"
+                  alt="Javascript" class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor"><img src="assets/icons/simple-icons_styledcomponents.svg"
+                  alt="Styled-Componentes" class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-html.svg" alt="Html"
+                  class="circulo-contenedor__img"></li> -->
+            </ul>
 
-      <div>
-        <article>
-          <img src="assets/icons/logos_vitejs.svg" alt="Vite">
-          <h3>Vite js</h3>
-        </article>
-        <article>
-          <img src="assets/icons/logos_react.svg" alt="React">
-          <h3>Vite js</h3>
-        </article>
-        <article>
-          <img src="assets/icons/logos_figma.svg" alt="Figma">
-          <h3>Figma</h3>
-        </article>
-        <article>
-          <img src="assets/icons/vscode-icons_file-type-css.svg" alt="Css">
-          <h3>Css</h3>
-        </article>
-        <article>
-          <img src="assets/icons/vscode-icons_file-type-postcss.svg" alt="Postcss">
-          <h3>Postcss</h3>
-        </article>
-        <article>
-          <img src="assets/icons/vscode-icons_file-type-js-official.svg" alt="Javascript">
-          <h3>Javascript</h3>
-        </article>
-        <article>
-          <img src="assets/icons/simple-icons_styledcomponents.svg" alt="Styled-Componentes">
-          <h3>Styled-Componentes</h3>
-        </article>
-        <article>
-          <img src="assets/icons/vscode-icons_file-type-html.svg" alt="Html">
-          <h3>Html</h3>
-        </article>
+          </div>
+        </div>
       </div>
-
-      <div class="circulo">
-
-        <div><img src="assets/icons/logos_vitejs.svg" alt="Vite"></div>
-        <div><img src="assets/icons/logos_react.svg" alt="React"></div>
-        <div><img src="assets/icons/logos_figma.svg" alt="Figma"></div>
-        <div><img src="assets/icons/vscode-icons_file-type-css.svg" alt="Css"></div>
-        <div><img src="assets/icons/vscode-icons_file-type-postcss.svg" alt="Postcss"></div>
-        <div><img src="assets/icons/vscode-icons_file-type-js-official.svg" alt="Javascript"></div>
-        <div><img src="assets/icons/simple-icons_styledcomponents.svg" alt="Styled-Componentes"></div>
-        <div><img src="assets/icons/vscode-icons_file-type-html.svg" alt="Html"></div>
-
-      </div>
-
     </section>
-
     <section class="section">
       <header>
         <h2>Proyectos</h2>
         <img src="assets/icons/skill.svg" alt="Proyectos">
       </header>
-
       <ul>
         <li>
           <p>img</p>
         </li>
-
         <button>Izquierda</button>
         <button>Derecha</button>
       </ul>
     </section>
-
     <section class="section">
-      <header>
-        <h2>Contactame</h2>
-        <img src="assets/icons/contactame.svg" alt="contactame">
+      <header class="section-header">
+        <h2 class="section-header__h2">Contactame</h2>
+        <img src="assets/icons/contactame.svg" alt="contactame" class="section-header__img">
       </header>
-
       <div>
         <form>
           <input type="text" id="name" name="name" placeholder="Nombre">
           <input type="email" name="email" id="email" placeholder="Email">
+          <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comentario"></textarea>
           <input type="submit" value="Enviar">
         </form>
-
         <picture>
-          <source media="(min-width: 950px)" srcset="assets/img/escritoriodskt.png">
-          <img src="assets/img/escritoriomovil.png" alt="">
+          <source media="(min-width: 70em)" srcset="assets/img/escritoriodesktop.jpg">
+          <img src="assets/img/escritoriomovil.jpg" alt="escritorio" loading="lazy">
         </picture>
       </div>
     </section>
   </main>
-
   <footer>
-
     <h3>Redes Sociales</h3>
-
-    <div>
-
-      <div><img src="assets/icons/logos_whatsapp.svg" alt="whatsapp"></div>
-      <div><img src="assets/icons/fe_github-alt.svg" alt="github"></div>
-      <div><img src="assets/icons/logos_linkedin-icon.svg" alt="linkedin"></div>
-      <div><img src="assets/icons/Instagram-Logo.wine 1.svg" alt="Instagram"></div>
-
-    </div>
-
+    <ul>
+      <li><a href="#"><img src="assets/icons/logos_whatsapp.svg" alt="whatsapp"></a></li>
+      <li><a href="#"><img src="assets/icons/fe_github-alt.svg" alt="github"></a></li>
+      <li><a href="#"><img src="assets/icons/logos_linkedin-icon.svg" alt="linkedin"></a></li>
+      <li><a href="#"><img src="assets/icons/Instagram-Logo.wine 1.svg" alt="Instagram"></a></li>
+    </ul>
   </footer>
-
-  <aside>
-    <nav>
-      <ul>
-        <li><a href="#">Sobre Mi</a><img src="assets/icons/skill.svg" alt="Proyectos"></li>
-        <li><a href="#">Hablilidades</a><img src="assets/icons/cib_skills.svg" alt="skill"></li>
-        <li><a href="#">Proyectos</a><img src="assets/icons/skill.svg" alt="Proyectos"></li>
-        <li><a href="#">Contactame</a><img src="assets/icons/contactame.svg" alt="contactame"></li>
-      </ul>
+  <aside class="aside">
+    <nav class="nav">
+      <menu class="menu">
+        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/bxs_home.svg" alt="Proyectos"
+              class="menu__img"><span class="menu__span">Sobre Mi</span></a></li>
+        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/cib_skills.svg" alt="skill"
+              class="menu__img"><span class="menu__span">Hablilidades</span></a></li>
+        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/skill.svg" alt="Proyectos"
+              class="menu__img"><span class="menu__span">Proyectos</span></a></li>
+        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/contactame.svg" alt="contactame"
+              class="menu__img"><span class="menu__span">Contactame</span></a></li>
+      </menu>
     </nav>
   </aside>
-
-  <button class="nav-boton">boton</button>
-
+  <div class="contenedor-boton">
+    <button class="hamburgers">
+      <span class="hamburgers__content">
+        <span class="content-linea"></span>
+      </span>
+    </button>
+  </div>
 
   <script type="module" src="./js/main.js"></script>
 
