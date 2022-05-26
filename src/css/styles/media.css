@@ -27,4 +27,51 @@
       padding-right: 2rem;
     }
   }
+
+  .hamburgers {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    top: 40vh;
+    right: 15%;
+    block-size: 446px;
+    inline-size: 80px;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      block-size: inherit;
+      inline-size: inherit;
+
+      & li {
+        display: flex;
+        align-items: center;
+        inline-size: 595px;
+        block-size: 91px;
+        border: 2px solid var(--blanco);
+        background-color: var(--negro);
+      }
+
+      li img {
+        block-size: 3rem;
+      }
+
+      li a {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        inline-size: 227px;
+        color: var(--blanco);
+      }
+    }
+  }
+
+  .footer {
+    & h3 {
+      text-align: left;
+    }
+  }
 }

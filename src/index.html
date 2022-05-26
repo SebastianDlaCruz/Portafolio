@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"> -->
   <title>Sebastian De La Cruz</title>
   <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/ico/apple-icon-60x60.png">
@@ -41,7 +40,7 @@
     <div class="header-contenedor">
       <hgrupo class="hgrup">
         <h1 class="hgrup__h1">SEBASTIAN DE LA CRUZ</h1>
-        <h3 class="hgrup__h3">Frontend Developer</h3>
+        <h2 class="hgrup__h2">Frontend Developer</h2>
       </hgrupo>
       <div class="header-contenedor-img">
         <div class="header-contenedor-img__img"></div>
@@ -49,7 +48,7 @@
     </div>
   </header>
   <main>
-    <section class="section">
+    <section class="section" id="SobreMi">
       <header class="section-header">
         <h2 class="section-header__h2">Sobre Mi</h2>
         <img src="assets/icons/bxs_home.svg" alt="home" class="section-header__img">
@@ -83,9 +82,7 @@
         </div>
       </div>
     </section>
-
     <section class="section section-exp">
-
       <div class="anio-2020">
         <p>En este año ingrese a la carrera de de tecnico universitario en programacion,
           en la Universidad Tecnologica Nacional. Aprendi la logica de la programcion con diagramas de flujo y fue mi
@@ -112,74 +109,73 @@
         <button class="cotenedor-experiecia-tiempo__btn tres">2022</button>
       </article>
     </section>
-    <section classs="section">
+    <section classs="section" id="Hablilidades">
       <header class="section-header">
         <h2 class="section-header__h2">Hablilidades</h2>
         <img src="assets/icons/cib_skills.svg" alt="skill">
       </header>
       <div class="flex">
         <div class="contenedor-habilidades">
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="1">
             <img src="assets/icons/logos_vitejs.svg" alt="Vite" class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">Vite js</h3>
           </article>
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="2">
             <img src="assets/icons/logos_react.svg" alt="React" class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">React js</h3>
           </article>
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="3">
             <img src="assets/icons/logos_figma.svg" alt="Figma" class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">Figma</h3>
           </article>
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="4">
             <img src="assets/icons/vscode-icons_file-type-css.svg" alt="Css" class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">Css</h3>
           </article>
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="5">
             <img src="assets/icons/vscode-icons_file-type-postcss.svg" alt="Postcss" class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">Postcss</h3>
           </article>
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="6">
             <img src="assets/icons/vscode-icons_file-type-js-official.svg" alt="Javascript"
               class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">Javascript</h3>
           </article>
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="7">
             <img src="assets/icons/simple-icons_styledcomponents.svg" alt="Styled-Componentes"
               class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">Styled-Componentes</h3>
           </article>
-          <article class="contenedor-habilidad">
+          <article class="contenedor-habilidad" data-article="8">
             <img src="assets/icons/vscode-icons_file-type-html.svg" alt="Html" class="contenedor-habilidad__img">
             <h3 class="contenedor-habilidad__h3">Html</h3>
           </article>
         </div>
         <div class="contenedor-cirlulo">
-          <div class="pre-contenedor-circulo">
+          <div class="pre-circulo">
             <ul class="circulo-habilidades">
-              <!--             <li class="circulo-contenedor"><img src="assets/icons/logos_vitejs.svg" alt="Vite"
+              <li class="circulo-contenedor" data-img="1"><img src="assets/icons/logos_vitejs.svg" alt="Vite"
                   class="circulo-contenedor__img"></li>
-              <li class="circulo-contenedor"><img src="assets/icons/logos_react.svg" alt="React"
+              <li class="circulo-contenedor" data-img="2"><img src="assets/icons/logos_react.svg" alt="React"
                   class="circulo-contenedor__img"></li>
-              <li class="circulo-contenedor"><img src="assets/icons/logos_figma.svg" alt="Figma"
+              <li class="circulo-contenedor" data-img="3"><img src="assets/icons/logos_figma.svg" alt="Figma"
                   class="circulo-contenedor__img"></li>
-              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-css.svg" alt="Css"
-                  class="circulo-contenedor__img"></li>
-              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-postcss.svg" alt="Postcss"
-                  class="circulo-contenedor__img"></li>
-              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-js-official.svg"
+              <li class="circulo-contenedor" data-img="4"><img src="assets/icons/vscode-icons_file-type-css.svg"
+                  alt="Css" class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor" data-img="5"><img src="assets/icons/vscode-icons_file-type-postcss.svg"
+                  alt="Postcss" class="circulo-contenedor__img"></li>
+              <li class="circulo-contenedor" data-img="6"><img src="assets/icons/vscode-icons_file-type-js-official.svg"
                   alt="Javascript" class="circulo-contenedor__img"></li>
-              <li class="circulo-contenedor"><img src="assets/icons/simple-icons_styledcomponents.svg"
+              <li class="circulo-contenedor" data-img="7"><img src="assets/icons/simple-icons_styledcomponents.svg"
                   alt="Styled-Componentes" class="circulo-contenedor__img"></li>
-              <li class="circulo-contenedor"><img src="assets/icons/vscode-icons_file-type-html.svg" alt="Html"
-                  class="circulo-contenedor__img"></li> -->
+              <li class="circulo-contenedor" data-img="8"><img src="assets/icons/vscode-icons_file-type-html.svg"
+                  alt="Html" class="circulo-contenedor__img"></li>
             </ul>
-
           </div>
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="Proyectos">
       <header>
         <h2>Proyectos</h2>
         <img src="assets/icons/skill.svg" alt="Proyectos">
@@ -192,58 +188,64 @@
         <button>Derecha</button>
       </ul>
     </section>
-    <section class="section">
+    <section class="section" id="Contactame">
       <header class="section-header">
         <h2 class="section-header__h2">Contactame</h2>
         <img src="assets/icons/contactame.svg" alt="contactame" class="section-header__img">
       </header>
-      <div>
-        <form>
-          <input type="text" id="name" name="name" placeholder="Nombre">
-          <input type="email" name="email" id="email" placeholder="Email">
+      <div class="contendor-formulario">
+        <form method="POST">
+          <input type="text" id="name" name="name" placeholder="Nombre" required>
+          <span class="mensaje-text-error">El campo esta incorrectamente llenado por favor ingrese bien el nombre</span>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <span class="mensaje-email-error">El campo esta incorrectamente llenado por favor ingrese bien el email</span>
           <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comentario"></textarea>
           <input type="submit" value="Enviar">
         </form>
         <picture>
           <source media="(min-width: 70em)" srcset="assets/img/escritoriodesktop.jpg">
-          <img src="assets/img/escritoriomovil.jpg" alt="escritorio" loading="lazy">
+          <img src="assets/img/escritoriomovil.jpg" alt="escritorio" loading="lazy" class="form-img">
         </picture>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <h3>Redes Sociales</h3>
-    <ul>
-      <li><a href="#"><img src="assets/icons/logos_whatsapp.svg" alt="whatsapp"></a></li>
-      <li><a href="#"><img src="assets/icons/fe_github-alt.svg" alt="github"></a></li>
-      <li><a href="#"><img src="assets/icons/logos_linkedin-icon.svg" alt="linkedin"></a></li>
-      <li><a href="#"><img src="assets/icons/Instagram-Logo.wine 1.svg" alt="Instagram"></a></li>
+    <ul class="footer-ul">
+      <li class="footer-ul-what"><a href="#"><img src="assets/icons/logos_whatsapp.svg" alt="whatsapp"
+            class="footer-ul-what__img"></a></li>
+      <li class="footer-ul-git"><a href="#"><img src="assets/icons/fe_github-alt.svg" alt="github"
+            class="footer-ul-git__img"></a></li>
+      <li class="footer-ul-link"><a href="#"><img src="assets/icons/logos_linkedin-icon.svg" alt="linkedin"
+            class="footer-ul-link__img"></a></li>
+      <li class="footer-ul-ins"><a href="#"><img src="assets/icons/Instagram-Logo.wine 1.svg" alt="Instagram"
+            class="footer-ul-ins__img"></a></li>
     </ul>
+
+    <p>Esta pagina fue desarrollado por sebastian de la cruz</p>
+
   </footer>
-  <aside class="aside">
-    <nav class="nav">
-      <menu class="menu">
-        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/bxs_home.svg" alt="Proyectos"
-              class="menu__img"><span class="menu__span">Sobre Mi</span></a></li>
-        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/cib_skills.svg" alt="skill"
-              class="menu__img"><span class="menu__span">Hablilidades</span></a></li>
-        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/skill.svg" alt="Proyectos"
-              class="menu__img"><span class="menu__span">Proyectos</span></a></li>
-        <li class="menu__items"><a href="#" class="menu__links"><img src="assets/icons/contactame.svg" alt="contactame"
-              class="menu__img"><span class="menu__span">Contactame</span></a></li>
-      </menu>
-    </nav>
-  </aside>
+
+  <nav class="nav">
+    <menu class="menu">
+      <li class="menu__items"><a href="#SobreMi" class="menu__links"><img src="assets/icons/bxs_home.svg"
+            alt="Proyectos" class="menu__img"><span class="menu__span">Sobre Mi</span></a></li>
+      <li class="menu__items"><a href="#Habilidad" class="menu__links"><img src="assets/icons/cib_skills.svg"
+            alt="skill" class="menu__img"><span class="menu__span">Hablilidades</span></a></li>
+      <li class="menu__items"><a href="#Proyectos" class="menu__links"><img src="assets/icons/skill.svg" alt="Proyectos"
+            class="menu__img"><span class="menu__span">Proyectos</span></a></li>
+      <li class="menu__items"><a href="#Contactame" class="menu__links"><img src="assets/icons/contactame.svg"
+            alt="contactame" class="menu__img"><span class="menu__span">Contactame</span></a></li>
+    </menu>
+  </nav>
   <div class="contenedor-boton">
-    <button class="hamburgers">
-      <span class="hamburgers__content">
-        <span class="content-linea"></span>
-      </span>
+    <button type="button" class="hamburgers">
+      <span class="linea"></span>
+      <span class="linea"></span>
+      <span class="linea"></span>
     </button>
   </div>
-
   <script type="module" src="./js/main.js"></script>
-
 </body>
 
 </html>
